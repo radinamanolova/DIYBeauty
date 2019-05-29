@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecipeDetailActivity">
+
+    <ImageView
+        android:id="@+id/recipe_detail_image"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    <ToggleButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/myToggleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_favorite_border_black_24dp"
+        android:clickable="true"
+        android:textOn=""
+        android:textOff=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/add_favorite"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recipe_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/recipe_detail_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/recipe_detail_use_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/detail_use_time"
+            android:textStyle="bold"
+            android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/recipe_detail_use_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/detail_use_time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/recipe_detail_ingredients_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/detail_ingredients"
+            android:textStyle="bold"
+            android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/recipe_detail_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/detail_ingredients" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/recipe_detail_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/detail_description"
+            android:textStyle="bold"
+            android:paddingRight="2.5dp"/>
+
+    <TextView
+        android:id="@+id/recipe_detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/detail_description" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
